@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar</title>
+    <link rel="icon" href="assets/images/bolabasquete.png">
+    <link rel="stylesheet" href="assets/css/basquete.css">
+    <script src="assets/js/basquete.js"></script>
+</head>
+
+<body>
+
+    <!-- título principal -->
+    <h1>🏀Placar de Basquete🏀</h1>
+
+    <!-- Article principal -->
+    <article>
+
+        <!-- Div equipe 1 -->
+        <div class="equipes">
+            <h2>Equipe 1</h2>
+            <p id="E11Q">1º Quarto: 0 pontos</p>
+            <p id="E12Q">2º Quarto: 0 pontos</p>
+            <p id="E13Q">3º Quarto: 0 pontos</p>
+            <p id="E14Q">4º Quarto: 0 pontos</p>
+            <p id="prorrogacaoE1"></p>
+            <p id="ganhoE1">Quartas ganhas: 0</p>
+            <button type="button" class="pontos" onclick="maisum1()">+ 1</button>
+            <button type="button" class="pontos" onclick="maisdois1()">+ 2</button>
+            <button type="button" class="pontos" onclick="maistres1()">+ 3</button>
+        </div>
+
+        <!-- Div contador de pontos -->
+        <div id="placar">
+            <h2 id="placartexto">Placar Atual</h2>
+            <div id="textoplacar">
+                <h3 id="atualE1">0</h3>
+                <h3>X</h3>
+                <h3 id="atualE2">0</h3>
+            </div>
+            <button type="button" onclick="pare()" id="parar">Parar</button>
+        </div>
+
+        <!-- Div equipe 2 -->
+        <div class="equipes">
+            <h2>Equipe 2</h2>
+            <p id="E21Q">1º Quarto: 0 pontos</p>
+            <p id="E22Q">2º Quarto: 0 pontos</p>
+            <p id="E23Q">3º Quarto: 0 pontos</p>
+            <p id="E24Q">4º Quarto: 0 pontos</p>
+            <p id="prorrogacaoE2"></p>
+            <p id="ganhoE2">Quartas ganhas: 0</p>
+            <button type="button" class="pontos" onclick="maisum2()">+ 1</button>
+            <button type="button" class="pontos" onclick="maisdois2()">+ 2</button>
+            <button type="button" class="pontos" onclick="maistres2()">+ 3</button>
+        </div>
+    </article>
+
+    <!-- Resutado -->
+    <h1 id="ganhador"></h1>
+</body>
+
+</html>
